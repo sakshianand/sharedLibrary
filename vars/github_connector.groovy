@@ -1,6 +1,6 @@
 def call(){
   httpRequest acceptType: 'APPLICATION_JSON', authentication: 'connectors', consoleLogResponseBody: true, contentType: 'APPLICATION_JSON', httpMode: 'POST', requestBody: '''{
-                "name": "vinu",
+                "name": "new_project",
                   "description": "This is your first repository",
                   "homepage": "https://github.com",
                   "private": false,
