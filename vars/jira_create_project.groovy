@@ -8,5 +8,8 @@ x(String data){
 }
 def call(){
  def request = libraryResource 'data.json'
- x(request)
+ def jsonSlurper = new JsonSlurper() 
+ def resultJson = jsonSlurper.parseText(request)
+ println resultJson.name
+ //x(request)
 }
