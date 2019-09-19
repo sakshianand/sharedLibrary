@@ -12,7 +12,7 @@ def projectName = '"'+resultJson.name+'"'
     customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], 
                     [maskValue: false, name: 'Accept', value: 'application/json']], 
     httpMode: 'POST', requestBody: '''{
-    "key": "KHA",
+    "key": "MAR",
     "name": $projectName,
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
