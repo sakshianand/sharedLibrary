@@ -6,12 +6,13 @@ def getJSONData(String json) {
    json.each {
       print “${it.name}”
    }
+   return a
 }
 def call(){
  def request = libraryResource 'data.json'
  def jsonSlurper = new JsonSlurper() 
  def resultJson = jsonSlurper.parseText(request)
- getJSONData(resultJson)
+ def x = getJSONData(resultJson)
 
 println object.name
 }
