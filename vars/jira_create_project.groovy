@@ -7,7 +7,7 @@ import groovy.json.JsonSlurper
 x(String data){
 def jsonSlurper = new JsonSlurper() 
  def resultJson = jsonSlurper.parseText(data)
- println '"'+${resultJson.name}+'"'
+ print resultJson.name
  
 }
 def call(){
