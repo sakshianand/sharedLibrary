@@ -3,13 +3,13 @@ import groovy.json.JsonSlurperClassic
 
 
 
-
-def call(){
-def request = libraryResource 'data.json'
     @NonCPS
 def jsonParse(def json) {
     new groovy.json.JsonSlurperClassic().parseText(request)
 }
+
+def call(){
+def request = libraryResource 'data.json'
 def config =  jsonParse(request)
 
     def db = config["name"]
