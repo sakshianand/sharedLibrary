@@ -6,7 +6,7 @@ import groovy.json.JsonSlurper
 @NonCPS
 x(String data){
 def jsonSlurper = new JsonSlurper() 
- def resultJson = jsonSlurper.parseText(request)
+ def resultJson = jsonSlurper.parseText(data)
  println resultJson.name
 // println resultJson.name
 }
