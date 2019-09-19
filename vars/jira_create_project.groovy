@@ -1,7 +1,8 @@
-def request = libraryResource 'data.json'
+// def request = libraryResource 'data.json'
 
 def call(){
- println $request
+ def req = x
+ println $req
 httpRequest authentication: 'jira_password', customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], [maskValue: false, name: 'Accept', value: 'application/json']], httpMode: 'POST', requestBody: '''{
     "key": "EXAM",
     "name": "example2",
