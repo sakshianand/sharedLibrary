@@ -3,7 +3,7 @@ import groovy.json.JsonSlurper
 
 
 
-
+@NonCPS
 x(String data){
  println("gg")
  
