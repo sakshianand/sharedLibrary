@@ -8,7 +8,7 @@ x(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
-println `{
+println '{
     "key": "JUP",
     "name": ${projectName},
     "projectTypeKey": "business",
@@ -16,7 +16,7 @@ println `{
     "description": "Example Project description",
     "lead": "ashnim",
     "assigneeType": "PROJECT_LEAD"
-}`
+}'
 
  
 }
