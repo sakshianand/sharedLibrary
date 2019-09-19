@@ -6,11 +6,11 @@ def request = libraryResource 'data.json'
     
 def jsonSlurper = new JsonSlurper()
 def object = jsonSlurper.parseText(request)
- println object.name
+
     
 httpRequest authentication: 'jira_password', customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], [maskValue: false, name: 'Accept', value: 'application/json']], httpMode: 'POST', requestBody: '''{
-    "key": "EXAM",
-    "name": "example2",
+    "key": "SAKS",
+    "name": object.name,
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
     "description": "Example Project description",
