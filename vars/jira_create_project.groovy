@@ -1,12 +1,20 @@
 // def request = libraryResource 'data.json'
-import groovy.json.JsonSlurper
+import groovy.json.JsonSlurperClassic 
+
+
+
 
 def call(){
 def request = libraryResource 'data.json'
-    
-def jsonSlurper = new JsonSlurper()
-def object = jsonSlurper.parseText(request)
-println object.name
+    @NonCPS
+def jsonParse(def json) {
+    new groovy.json.JsonSlurperClassic().parseText(request)
+}
+def config =  jsonParse(request)
+
+    def db = config["name"]
+    println db
+
     
 httpRequest authentication: 'jira_password', 
     customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], 
