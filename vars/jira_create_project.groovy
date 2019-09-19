@@ -2,15 +2,18 @@
 import groovy.json.JsonSlurper
 
 def call(){
-//def request = libraryResource 'data.json'
+def request = libraryResource 'data.json'
     
-//def jsonSlurper = new JsonSlurper()
-//def object = jsonSlurper.parseText(request)
+def jsonSlurper = new JsonSlurper()
+def object = jsonSlurper.parseText(request)
 
     
-httpRequest authentication: 'jira_password', customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], [maskValue: false, name: 'Accept', value: 'application/json']], httpMode: 'POST', requestBody: '''{
-    "key": "NAM",
-    "name": "namaste",
+httpRequest authentication: 'jira_password', 
+    customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], 
+                    [maskValue: false, name: 'Accept', value: 'application/json']], 
+    httpMode: 'POST', requestBody: '''{
+    "key": "PIZ",
+    "name": ${object.name},
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
     "description": "Example Project description",
