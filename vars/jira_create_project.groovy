@@ -1,7 +1,7 @@
 // def request = libraryResource 'data.json'
 import groovy.json.JsonSlurper 
 
-jsonData(String data){
+x(String data){
   def jsonSlurper = new JsonSlurper() 
  def resultJson = jsonSlurper.parseText(data)
  httpRequest authentication: 'jira_password', 
@@ -21,5 +21,5 @@ println resultJson.name
 }
 def call(){
  def request = libraryResource 'data.json'
- jsonData(request)
+ x(request)
 }
