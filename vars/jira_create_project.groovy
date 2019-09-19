@@ -11,7 +11,7 @@ def jsonSlurper = new JsonSlurper()
     customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], 
                     [maskValue: false, name: 'Accept', value: 'application/json']], 
     httpMode: 'POST', requestBody: '''{
-    "key": "PIZ",
+    "key": "KHA",
     "name": $resultJson.name,
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
