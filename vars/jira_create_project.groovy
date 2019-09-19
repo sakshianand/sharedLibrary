@@ -1,12 +1,6 @@
 // def request = libraryResource 'data.json'
-import groovy.json.JsonSlurperClassic 
+import groovy.json.JsonSlurper 
 
-
-
-    @NonCPS
-def jsonParse(def json) {
-    new groovy.json.JsonSlurperClassic().parseText(request)
-}
 
 def call(){
 def request = libraryResource 'data.json'
