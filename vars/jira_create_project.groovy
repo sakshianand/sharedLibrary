@@ -8,6 +8,7 @@ x(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
+println projectName
 def length = projectName.size()
 println length
 
