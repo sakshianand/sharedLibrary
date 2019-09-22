@@ -10,7 +10,7 @@ def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
 def length = resultJson.name.size()
  if(length>=3){
-  key=name.substring(0, Math.min(name.length(), length)).toUpperCase();
+  key=resultJson.name.substring(0, Math.min(name.length(), length)).toUpperCase();
  }
  println key
 
