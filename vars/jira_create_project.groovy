@@ -8,9 +8,12 @@ x(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
-println projectName
 def length = resultJson.name.size()
-println resultJson.name.size()
+ if(length>=3){
+  key=name.substring(0, Math.min(name.length(), length)).toUpperCase();
+ }
+ println key
+
 
 
  
