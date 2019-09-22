@@ -10,7 +10,7 @@ def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
 println '''{
     "key": "PLU",
-    "name": projectName,
+    "name": $projectName,
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
     "description": "Example Project description",
