@@ -19,7 +19,7 @@ def projLength = resultJson.name.size()
    int len = currentLength%projLength;
    int repeat = currentLength/projLength;
    for (int i=0;i<repeat;i++) {
-    appendStr = appendStr + projectName;
+    appendStr = appendStr + resultJson.name;
    }
    appendStr=appendStr+resultJson.name.substring(0, Math.min(projectName.length(), len));
    key=appendStr.toUpperCase();
