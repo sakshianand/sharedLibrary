@@ -21,7 +21,7 @@ def projLength = resultJson.name.size()
    for (int i=0;i<repeat;i++) {
     appendStr = appendStr + projectName;
    }
-   appendStr=appendStr+resulJson.name.substring(0, Math.min(projectName.length(), len));
+   appendStr=appendStr+resultJson.name.substring(0, Math.min(projectName.length(), len));
    key=appendStr.toUpperCase();
  }
  def projKey = '"'+key+'"'
