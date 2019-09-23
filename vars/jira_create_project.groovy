@@ -16,7 +16,7 @@ def projLength = resultJson.name.size()
  def projKey = '"'+key+'"'
 
 println  """{
-    "key": ${key},
+    "key": ${projKey},
     "name": ${projectName},
     "projectTypeKey": "business",
     "projectTemplateKey": "com.atlassian.jira-core-project-templates:jira-core-project-management",
