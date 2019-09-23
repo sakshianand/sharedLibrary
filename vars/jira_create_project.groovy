@@ -13,6 +13,7 @@ def projLength = resultJson.name.size()
  if(length>=3){
   key=resultJson.name.substring(0, Math.min(projLength, length)).toUpperCase();
  }
+ def projKey = '"'+key+'"'
 
 println  """{
     "key": ${key},
