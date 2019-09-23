@@ -4,7 +4,7 @@ import groovy.json.JsonSlurper
 
 
 @NonCPS
-x(String data){
+createProject(String data){
 def jsonSlurper = new JsonSlurper() 
 def resultJson = jsonSlurper.parseText(data)
 def projectName = '"'+resultJson.name+'"'
@@ -33,5 +33,5 @@ httpRequest authentication: 'jira_password',
 }
 def call(){
  def request = libraryResource 'data.json'
- x(request)
+ createProject(request)
 }
