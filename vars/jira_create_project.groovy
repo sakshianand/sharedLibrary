@@ -1,6 +1,7 @@
 // def request = libraryResource 'data.json'
 import groovy.json.JsonSlurper 
 
+@NonCPS
 createIssues(String x){
  println x
 }
