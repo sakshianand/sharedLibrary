@@ -1,34 +1,7 @@
 // def request = libraryResource 'data.json'
 import groovy.json.JsonSlurper 
 
-@NonCPS
-createIssues(String projKey){
- println  """
-    {
-        "issueUpdates": [
-        {
-        "update":{},
-        "fields": {
-        "project":
-        {
-         "key": ${projKey}
-        },
-        "summary": "this is summary 1",
-        "description": "this is description",
-        "issuetype": {
-        "name": "Task"
-        },
-        "assignee": {
-        "name": "ashnim"
-        },
-        "reporter": {
-        "name": "ashnim"
-        }
-        }
-        }
-        ]
-} """
-}
+
 
 
 
