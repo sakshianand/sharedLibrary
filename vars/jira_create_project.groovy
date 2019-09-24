@@ -14,7 +14,7 @@ createIssues(String projKey){
         "fields": {
         "project":
         {
-         "key": "SAK"
+         "key": ${projKey}
         },
         "summary": "this is summary 1",
         "description": "this is description",
