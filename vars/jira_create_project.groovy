@@ -3,7 +3,7 @@ import groovy.json.JsonSlurper
 
 @NonCPS
 createIssues(String x){
- println x
+
 }
 
 
