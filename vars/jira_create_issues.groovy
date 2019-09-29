@@ -9,7 +9,7 @@ def projKey = '"'+key+'"'
 "fields": {
 "project":
 {
- "key": "SAK"
+ "key": "DEM"
 },
 "summary": "this is summary 1",
 "description": "this is description",
