@@ -87,5 +87,6 @@ createIssues(projKey)
 }
 def call(){
  def request = libraryResource 'data.json'
- createProject(request)
+//def key = createProject(request)
+createIssues("SAK")
 }
