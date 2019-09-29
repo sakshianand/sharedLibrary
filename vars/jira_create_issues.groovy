@@ -35,5 +35,5 @@ def projKey = '"'+key+'"'
 }
 
 def call(){
- createIssues(request)
+ createIssues()
 }
