@@ -5,11 +5,6 @@ import groovy.json.JsonSlurper
 createIssues(String key){
 
 
-
- 
-
- 
-
 }
 
 
