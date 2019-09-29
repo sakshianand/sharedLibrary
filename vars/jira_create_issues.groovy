@@ -1,6 +1,6 @@
 @NonCPS
 createIssues(){
-def projKey = '"'+key+'"'
+//def projKey = '"'+key+'"'
  
  httpRequest authentication: 'jira_password', customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], [maskValue: false, name: 'Accept', value: 'application/json']], httpMode: 'POST', requestBody: '''{
     "issueUpdates": [
