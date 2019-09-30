@@ -32,7 +32,7 @@ def projLength = resultJson.name.size()
 "fields": {
 "project":
 {
- "key": "DEM"
+ "key": ${projKey}
 },
 "summary": "this is summary 1",
 "description": "this is description",
