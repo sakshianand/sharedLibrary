@@ -24,7 +24,7 @@ def projLength = resultJson.name.size()
  }
  def projKey = '"'+key+'"'
 //def projKey = '"'+key+'"'
-println "issueUpdates": [
+println """ "issueUpdates": [
 {
 "update":{},
 "fields": {
@@ -46,7 +46,7 @@ println "issueUpdates": [
 
 }
 }
-]
+] """
 
  
 
